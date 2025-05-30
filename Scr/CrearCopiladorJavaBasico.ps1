@@ -108,7 +108,7 @@ if ($LASTEXITCODE -eq 0){
 
 Write-Host "Compilacion Exitosa."
 Write-Host "Ejecutando...."
-java -cp $classpath $javaArchivos
+java -cp $classpath $claseMain #Utilizamos clase main para poder ejecutar todas las clases.
 
 }else {
   Write-Host "Hubo un ERROR en plena copilacion."
